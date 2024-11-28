@@ -10,7 +10,29 @@ console.log(nombresEntier)
 let verifierNombreDeTaches = 0;
 
 if (verifierNombreDeTaches === 0){
-    console.log("vrai")
+    console.log("vrai");
 } else {
-    console.log("faux")
-}
+    console.log("faux");
+ }
+
+ //Ajouter une tache à une liste(Tableau)
+
+ let listeTaches = [];
+
+ function ajouterTache(tache){
+    listeTaches.push(tache)
+    afficherTaches()
+ }
+ 
+ function afficherTaches(){
+    if (listeTaches.length === 0){
+        console.log("Aucune tache ajouter");
+    } else {
+        console.log("Une tache est ajoutée");
+        console.log(listeTaches);
+     }
+  } 
+ ajouterTache("lunette");
+ ajouterTache("cahier")
+ ajouterTache("stylo")
+ 
