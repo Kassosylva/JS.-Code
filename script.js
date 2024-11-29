@@ -17,11 +17,22 @@ if (verifierNombreDeTaches === 0){
 
  //Ajouter une tache à une liste(Tableau)
 
- let listeTaches = [];
+ let tableau = [];
+ tableau[tableau.length] = 80;
+ console.log(tableau);
+ 
+//Afficher toutes les taches
+console.log("Afficher les éléments du tableau")
+for (let i = 0; i < tableau.length; i++){
+    console.log(tableau[i]);
+}
+
+//Ajouter une tache
+let listeTaches = [];
 
  function ajouterTache(tache){
     listeTaches.push(tache)
-    afficherTaches()
+    afficherTaches();
  }
  
  function afficherTaches(){
@@ -35,4 +46,3 @@ if (verifierNombreDeTaches === 0){
  ajouterTache("lunette");
  ajouterTache("cahier")
  ajouterTache("stylo")
- 
