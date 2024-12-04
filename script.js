@@ -18,13 +18,15 @@ if (verifierNombreDeTaches === 0){
  //Ajouter une tache à une liste(Tableau)
 
  let tableau = [];
- tableau[tableau.length] = 80;
+ tableau[tableau.length] = "vin";
  console.log(tableau);
  
 //Afficher toutes les taches
-console.log("Afficher les éléments du tableau")
-for (let i = 0; i < tableau.length; i++){
-    console.log(tableau[i]);
+
+tableauTaches = ["stylo", "vin", "ivoire"];
+
+for (let i = 0; i < tableauTaches.length; i++){
+    console.table(tableauTaches[i]);
 }
 
 //Ajouter une tache
@@ -40,9 +42,21 @@ let listeTaches = [];
         console.log("Aucune tache ajouter");
     } else {
         console.log("Une tache est ajoutée");
-        console.log(listeTaches);
+        console.table(listeTaches);
      }
   } 
  ajouterTache("lunette");
  ajouterTache("cahier")
  ajouterTache("stylo")
+
+  //suprimer la dernier tache
+
+let tableauElements = [60, 700, 18, 400];
+
+tableauElements.pop()
+console.log("Suppression du dernier élément du tableau");
+console.table(tableauElements);
+
+//Modifie une tache spécifique dansle tableauen utilisant l'index de l'élément.
+
+let table = [12, 4, 43, 20];
